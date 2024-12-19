@@ -1,35 +1,39 @@
-// import { motion } from 'framer-motion';
+import React from 'react';
+import Image from 'next/image';
 
 const SectionNm = () => {
-    return (
-        <section className="py-20 px-6 relative overflow-hidden bg-gradient-to-br from-orange-100 via-white to-green-100">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center bg-white rounded-2xl shadow-xl p-8">
-            <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80"
-                alt="AI Innovation"
-                className="rounded-xl shadow-lg"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl" />
-            </div>
-            
-            <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-gray-800">
-                Transforming India Through
-                <span className="block text-primary">AI Innovation</span>
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                We're on a mission to democratize AI education across India, making cutting-edge technology accessible to everyone. Our comprehensive programs are designed to empower the next generation of AI innovators.
-              </p>
-              <button className="px-8 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg">
-                Learn More
-              </button>
-            </div>
-          </div>
+  return (
+    <>
+
+<div className="text-white py-20 bg-white relative mt-12 mb-[8rem] lg:mb-[10rem] z-10">
+
+  <div className="bg-orange-500 pt-10 w-full h-[25rem] md:h-[40rem]">
+    <div className="container mx-auto px-4 max-w-6xl">
+      <div className="flex flex-col items-center text-center">
+        <h1 className="mb-4 leading-tight">
+          <span className="text-xl md:text-2xl font-bold">प्रेरणास्तोत्र</span> <br />
+          <span className="text-md md:text-xl mb-4 leading-tight">
+            AI हमारे नए भविष्य को गढ़ने का सबसे बड़ा आधार बन रही है. AI की एक बहुत बड़ी ताकत है, लोगों को Connect करने की उसकी क्षमता. AI के सही इस्तेमाल से सिर्फ देश की आर्थिक प्रगति ही सुनिश्चित नहीं होती बल्कि ये समानता और सामाजिक न्याय को भी पक्का करता है.
+          </span>
+        </h1>
+        <p className="text-lg md:text-xl mb-8 opacity-90">
+          <i>~ श्री नरेंद्र मोदी जी ग्लोबल पार्टनरशिप ऑन आर्टिफिशियल इंटेलिजेंस (GPAI) समिट-2023</i>
+        </p>
+        <div className="relative mb-8">
+          <Image 
+            src="/assets/modiji.jpg"
+            alt="Design team collaboration"
+            width={1200}
+            height={400}
+            className="rounded-2xl shadow-lg w-full object-cover"
+          />
         </div>
-      </section>
-    );
+      </div>
+    </div>
+  </div>
+</div>
+    </>
+  );
 };
-  
+
 export default SectionNm;
