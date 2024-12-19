@@ -75,7 +75,7 @@ const HeroSection = () => {
           <div className="absolute inset-0 flex items-center justify-center">
             {/* Center Robot */}
             <div className="rounded-full overflow-hidden z-10 relative">
-              <img
+              <Image
                 src="/assets/Bharataihero.gif"
                 alt="Main Robot"
                 fill='true'
