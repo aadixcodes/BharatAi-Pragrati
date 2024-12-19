@@ -24,7 +24,8 @@ const MissionVisionSection = () => {
   return (
     <section className="py-20 px-6 bg-white relative">
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-gray-100 to-white"></div>
-      <div className="max-w-7xl mx-auto text-center">
+      
+      <div className="max-w-7xl mx-auto text-center relative z-10">
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-16">
           Our Mission and Vision
         </h2>
