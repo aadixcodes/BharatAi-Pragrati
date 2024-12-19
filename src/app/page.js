@@ -25,6 +25,9 @@ import SectionNm from "@/components/SectionNm";
 import MissionVisionSection from "@/components/MissionAndVision";
 import AIInitiativesSection from "@/components/AIInitiativesSection";
 import BharatAiPragati from "@/components/BharatAiPragati";
+import AIVidya from '@/components/AiVidya';
+import Courses from '@/components/Courses';
+import Benefits from '@/components/Benefits';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);  // State to control the loading screen
@@ -50,6 +53,9 @@ export default function Home() {
           <BharatAiPragati />
           <MissionVisionSection />
           <AIInitiativesSection />
+          <AIVidya />
+          <Courses />
+          <Benefits />
         </>
       )}
     </>

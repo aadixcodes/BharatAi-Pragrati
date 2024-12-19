@@ -47,7 +47,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white relative overflow-hidden pt-16 md:pt-0 pb-20">
+    <div className="min-h-screen bg-white relative overflow-visible pt-16 md:pt-0 pb-20">
 
       {/* Background Gradients */}
       <div className="absolute inset-0 pointer-events-none">
@@ -55,7 +55,7 @@ const HeroSection = () => {
         <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-green-500/20 rounded-full filter blur-3xl animate-pulse delay-1000" />
       </div>
 
-      <div className="container mx-auto px-4 min-h-screen flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 py-8 md:py-12">
+      <div className="container mx-auto px-4 min-h-screen flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 py-8 md:py-12 relative">
         {/* Text Content */}
         <div className="flex-1 text-center md:text-left z-10 w-full">
           <h1 className="text-5xl md:text-8xl font-bold mb-6 text-gray-900">
@@ -71,12 +71,12 @@ const HeroSection = () => {
         </div>
 
         {/* Robot Orbit Section */}
-        <div className="flex-1 flex justify-center items-center relative h-[350px] sm:h-[400px] md:h-[500px] w-full md:w-auto">
+        <div className="flex-1 flex justify-center items-center relative h-[450px] sm:h-[500px] md:h-[500px] w-full md:w-auto">
           <div className="absolute inset-0 flex items-center justify-center">
             {/* Center Robot */}
             <div className="rounded-full overflow-hidden z-10 relative">
               <Image
-                src="/assets/Bharataihero.gif"
+                src="/assets/bharataihero.gif"
                 alt="Main Robot"
                 width={400}
                 height={800}
