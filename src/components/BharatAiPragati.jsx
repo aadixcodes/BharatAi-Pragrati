@@ -190,7 +190,7 @@ const BharatAiPragati = () => {
           </p>
           <div className="w-full py-2 flex justify-center md:justify-start">
             <button className="bg-orange-500 text-black px-6 py-2 mt-4 rounded-full shadow-lg flex items-center space-x-2 transition-transform transform hover:scale-105">
-              <span>Try Now</span>
+              <span>Join Now</span>
               <i className="fas fa-arrow-right"></i>
             </button>
           </div>

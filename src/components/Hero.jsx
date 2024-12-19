@@ -75,10 +75,9 @@ const HeroSection = () => {
           <div className="absolute inset-0 flex items-center justify-center">
             {/* Center Robot */}
             <div className="rounded-full overflow-hidden z-10 relative">
-              <img
+              <Image
                 src="/assets/Bharataihero.gif"
                 alt="Main Robot"
-                fill='true'
                 width={400}
                 height={800}
                 className="object-cover"
@@ -95,7 +94,7 @@ const HeroSection = () => {
               return (
                 <div
                   key={index}
-                  className="absolute rounded-full overflow-hidden w-20 h-20 sm:w-24 sm:h-24 transition-all duration-1000"
+                  className="absolute rounded-full overflow-hidden w-20 h-20 sm:w-35 sm:h-35 transition-all duration-1000"
                   style={{
                     transform: `translate(${x}px, ${y}px) rotate(${angle}deg)`,
                     animation: `orbit 20s linear infinite`,

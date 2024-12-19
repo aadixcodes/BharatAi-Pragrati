@@ -1,60 +1,60 @@
-// import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion'
+import Image from "next/image";
 
 const governmentInitiatives = [
   {
-    name: 'Digital India',
-    logo: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+    logo: "/assets/gov1.webp",
   },
   {
-    name: 'NITI Aayog',
-    logo: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+    logo: "/assets/gov2.webp",
   },
   {
-    name: 'AI for All',
-    logo: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+    logo: "/assets/gov3.webp",
   },
   {
-    name: 'Smart Cities Mission',
-    logo: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+    logo: "/assets/gov4.webp",
   },
   {
-    name: 'Make in India',
-    logo: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+    logo: "/assets/gov5.webp",
   },
   {
-    name: 'Skill India',
-    logo: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+    logo: "/assets/gov6.webp",
   },
 ];
 
 const AIInitiativesSection = () => {
   return (
     <section className="py-20 px-6 bg-gray-50">
-  <div className="max-w-7xl mx-auto">
-    <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-      AI Initiatives by the Government of India
-    </h2>
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl font-bold text-center text-orange-600 mb-12"
+         style={{
+          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)", // Adds a subtle shadow
+        }}>
+          AI Initiatives by the Government of India
+        </h2>
 
-    <div className="relative overflow-hidden">
-      <div className="flex gap-8 whitespace-nowrap">
-        {[...governmentInitiatives, ...governmentInitiatives].map((initiative, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center space-y-4 bg-white p-6 rounded-xl shadow-lg min-w-[200px]"
-          >
-            <img
-              src={initiative.logo}
-              alt={initiative.name}
-              className="w-20 h-20 object-contain"
-            />
-            <h3 className="font-semibold text-gray-800">{initiative.name}</h3>
+        <div className="relative overflow-hidden">
+          <div className="flex gap-8 whitespace-nowrap">
+            {[...governmentInitiatives, ...governmentInitiatives].map(
+              (initiative, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center space-y-4 bg-white p-6 rounded-xl min-w-[200px]"
+                >
+                  <Image
+                    src={initiative.logo}
+                    alt={initiative.name}
+                    width={100}
+                    height={100}
+                    className="object-contain"
+                  />
+                </div>
+              )
+            )}
           </div>
-        ))}
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
+    </section>
   );
 };
 

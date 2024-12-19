@@ -34,7 +34,7 @@ const MissionVisionSection = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-8 py-3 rounded-full border-2 border-orange-500 font-semibold transition-all shadow-lg ${
+              className={`px-8 py-2 rounded-full border-2 border-orange-500 font-semibold transition-all shadow-lg ${
                 activeTab === tab
                   ? "bg-orange-500 text-white shadow-orange-500/50 hover:shadow-orange-500/70"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:shadow-md"
@@ -46,35 +46,31 @@ const MissionVisionSection = () => {
         </div>
 
         <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.3 }}
+            className="grid md:grid-cols-2 gap-8 items-center"
+          >
+            <div className="flex justify-center">
+              <img
+                src={content[activeTab].image}
+                alt={content[activeTab].title}
+                className="rounded-xl shadow-2xl w-[500px] h-[300px] object-cover"
+              />
+            </div>
 
-
-<motion.div
-  key={activeTab}
-  initial={{ opacity: 0, x: 20 }}
-  animate={{ opacity: 1, x: 0 }}
-  exit={{ opacity: 0, x: -20 }}
-  transition={{ duration: 0.3 }}
-  className="grid md:grid-cols-2 gap-8 items-center"
->
-  <div className="flex justify-center">
-    <img
-      src={content[activeTab].image}
-      alt={content[activeTab].title}
-      className="rounded-xl shadow-2xl w-[500px] h-[300px] object-cover"
-    />
-  </div>
-
-  <div className="text-left space-y-6">
-    <h3 className="text-3xl md:text-4xl font-bold text-gray-800">
-      {content[activeTab].title}
-    </h3>
-    <p className="text-md md:text-xl text-gray-600 leading-relaxed">
-      {content[activeTab].description}
-    </p>
-  </div>
-</motion.div>
-
-
+            <div className="text-left space-y-6">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-800">
+                {content[activeTab].title}
+              </h3>
+              <p className="text-md md:text-xl text-gray-600 leading-relaxed">
+                {content[activeTab].description}
+              </p>
+            </div>
+          </motion.div>
         </AnimatePresence>
       </div>
     </section>
