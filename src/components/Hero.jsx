@@ -78,7 +78,6 @@ const HeroSection = () => {
               <Image
                 src="/assets/Bharataihero.gif"
                 alt="Main Robot"
-                fill='true'
                 width={400}
                 height={800}
                 className="object-cover"
