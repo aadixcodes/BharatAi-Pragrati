@@ -88,13 +88,13 @@ const AIInitiativesSection = () => {
   }, [scrollPosition]);
 
   return (
-    <section className="relative py-2 px-6 overflow-x-hidden">
+    <section className="relative py-6 px-6 overflow-x-hidden">
       
       {/* Background Gradients */}
-      <div className=" absolute inset-0 pointer-events-none">
+      {/* <div className=" absolute inset-0 pointer-events-none">
         <div className="absolute top-[13%] right-[35%] w-[100px] md:w-[200px] h-[100px] md:h-[200px] bg-orange-700/30 rounded-full filter blur-3xl animate-pulse" />
         <div className="absolute bottom-[12%] left-[30%] w-[100px] h-[100px] md:w-[200px] md:h-[200px] bg-green-700/30 rounded-full filter blur-3xl delay-1000 animate-pulse" />
-      </div>
+      </div> */}
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Floating Header Section */}

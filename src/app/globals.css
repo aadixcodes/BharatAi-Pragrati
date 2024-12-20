@@ -85,3 +85,52 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@keyframes wave-slow {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-25%); }
+}
+@keyframes wave-normal {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(25%); }
+}
+@keyframes wave-fast {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-15%); }
+}
+.animate-wave-slow {
+  animation: wave-slow 15s ease-in-out infinite;
+}
+.animate-wave-normal {
+  animation: wave-normal 12s ease-in-out infinite;
+}
+.animate-wave-fast {
+  animation: wave-fast 10s ease-in-out infinite;
+}
+
+
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(100%) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100%) rotate(-360deg);
+  }
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+  .animate-spin-slower {
+    animation: spin 30s linear infinite;
+  }
+  .animate-spin-slowest {
+    animation: spin 40s linear infinite;
+  }
+  .animate-reverse-spin {
+    animation: spin 25s linear infinite reverse;
+  }
+}
