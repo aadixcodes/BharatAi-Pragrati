@@ -4,9 +4,9 @@ import Image from 'next/image';
 const SectionNm = () => {
   return (
     <>
-<div className="text-white py-20 bg-white relative mt-0 mb-[8rem] lg:mb-[10rem] z-0">
+<div className="text-white py-16 bg-white relative mt-0 mb-[8rem] lg:mb-[10rem] z-0">
 
-<div className="bg-orange-500 pt-20 w-full h-[25rem] md:h-[40rem]">..
+<div className="bg-orange-500 pt-10 w-full h-[25rem] md:h-[40rem]">
     <div className="container mx-auto px-4 max-w-6xl">
       <div className="flex flex-col items-center text-center">
         <h1 className="mb-4 leading-tight">

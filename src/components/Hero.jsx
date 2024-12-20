@@ -47,7 +47,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white relative overflow-visible pt-16 md:pt-0 pb-20">
+    <div className="min-h-screen bg-white relative overflow-hidden pt-16 md:pt-0 pb-20">
 
       {/* Background Gradients */}
       <div className="absolute inset-0 pointer-events-none">
@@ -71,10 +71,10 @@ const HeroSection = () => {
         </div>
 
         {/* Robot Orbit Section */}
-        <div className="flex-1 flex justify-center items-center relative h-[450px] sm:h-[500px] md:h-[500px] w-full md:w-auto">
+        <div className="flex-1 flex justify-center items-center relative h-[450px] sm:h-[500px] md:h-[600px] w-full md:w-auto">
           <div className="absolute inset-0 flex items-center justify-center">
             {/* Center Robot */}
-            <div className="rounded-full overflow-hidden z-10 relative">
+            <div className="rounded-full overflow-hidden z-10 relative translate-y-12">
               <Image
                 src="/assets/bharataihero.gif"
                 alt="Main Robot"
@@ -94,7 +94,7 @@ const HeroSection = () => {
               return (
                 <div
                   key={index}
-                  className="absolute rounded-full overflow-hidden w-20 h-20 sm:w-35 sm:h-35 transition-all duration-1000"
+                  className="absolute rounded-full -translate-y-8 overflow-hidden w-20 h-20 sm:w-35 sm:h-35 transition-all duration-1000"
                   style={{
                     transform: `translate(${x}px, ${y}px) rotate(${angle}deg)`,
                     animation: `orbit 20s linear infinite`,
